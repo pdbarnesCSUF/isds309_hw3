@@ -1,0 +1,40 @@
+-----
+  8
+-----
+In the game Rock Paper Scissors, two players simultaneously choose
+ one of three options: rock, paper, or scissors. If both players 
+ choose the same option, then the result is a tie. However, if 
+ they choose differently, the winner is determined as follows:
+
+Rock beats scissors, because a rock can break a pair of scissors.
+
+Scissors beats paper, because scissors can cut paper.
+
+Paper beats rock, because a piece of paper can cover a rock.
+
+Create a game in which the computer randomly chooses rock, paper,
+ or scissors. Let the user enter a character, r, p, or s, each 
+ representing one of the three choices. Then, determine the winner.
+ Save the application as RockPaperScissors.cs.
+
+-----
+  9
+-----
+Create a lottery game application named Lottery. Generate three 
+random numbers, each between 1 and 4. Allow the user to guess three
+ numbers. Compare each of the user’s guesses to the three random 
+ numbers, and display a message that includes the user’s guess, the
+ randomly determined three-digit number, and the amount of money the
+ user has won as follows:
+
+Matching Numbers	Award ($)
+Any one matching	10
+Two matching	100
+Three matching, not in order	1000
+Three matching in exact order	10,000
+No matches	0
+
+Make certain that your application accommodates repeating digits. 
+For example, if a user guesses 1, 2, and 3, and the randomly 
+generated digits are 1, 1, and 1, do not give the user credit 
+for three correct guesses—just one.
