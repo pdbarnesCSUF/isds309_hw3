@@ -87,8 +87,10 @@ when idNumber is both greater than 1000 and less than or equal to 9999, or else 
         
 12.  How many case labels would a switch statement require to be equivalent to the following if statement?
     
-    if(v = = 1) Line 2,	write line(" one, ")Line 3: else.
-	write line(" two, "
+    if(v == 1)
+		WriteLine("one")
+	else
+		WriteLine("two")
     
 * 1.  zero
         
@@ -120,9 +122,10 @@ when idNumber is both greater than 1000 and less than or equal to 9999, or else 
         
 15.  Which of the following is equivalent to the following statement?
     
-    if(m = = 0) Line 2,	d = = 0;
-else.
-	d = 1;
+    if(m == 0)
+		d = 0;
+	else
+		d = 1;
     
 * 1.  d = (m == 0) : d = 0, d = 1;
         
