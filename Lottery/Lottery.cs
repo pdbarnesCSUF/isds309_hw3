@@ -13,12 +13,13 @@ random numbers, each between 1 and 4. Allow the user to guess three
  randomly determined three-digit number, and the amount of money the
  user has won as follows:
 
-Matching Numbers	Award ($)
-Any one matching	10
-Two matching	100
-Three matching, not in order	1000
-Three matching in exact order	10,000
-No matches	0
+         Matching Numbers		|Award ($)
+--------------------------------|---------
+Any one matching				|10
+Two matching					|100
+Three matching, not in order	|1000
+Three matching in exact order	|10,000
+No matches						|0
 
 Make certain that your application accommodates repeating digits. 
 For example, if a user guesses 1, 2, and 3, and the randomly 
@@ -56,16 +57,107 @@ namespace Lottery
             in_2 = int.Parse(ReadLine());
             in_3 = int.Parse(ReadLine());
 
-            if (in_1 == first &&
-                in_2 == second &&
-                in_3 == third)
-            {
-                WriteLine("You've won: 10,000");
-            }
-            else
-            {
-
-            }
+			//this feels cumbersome
+			if (in_1 == first)
+			{
+				if (in_2 == second)
+				{
+					if (in_3 == third)
+					{
+						WriteLine("You've won: 10,000");
+					}
+					else
+					{
+						WriteLine("You've won: 100");
+					}
+				}
+				else
+				{
+					if (in_3 == second)
+					{
+						if (in_2 == third)
+						{
+							WriteLine("You've won: 1,000");
+						}
+						else
+						{
+							WriteLine("You've won: 100");
+						}
+					}
+					else
+					{
+						WriteLine("You've won: 10");
+					}
+				}
+			}
+			else if (in_2 == first)
+			{
+				if (in_1 == second)
+				{
+					if (in_3 == third)
+					{
+						WriteLine("You've won: 1,000");
+					}
+					else
+					{
+						WriteLine("You've won: 100");
+					}
+				}
+				else
+				{
+					if (in_3 == second)
+					{
+						if (in_1 == third)
+						{
+							WriteLine("You've won: 1,000");
+						}
+						else
+						{
+							WriteLine("You've won: 100");
+						}
+					}
+					else
+					{
+						WriteLine("You've won: 10");
+					}
+				}
+			}
+			else if (in_3 == first)
+			{
+				if (in_1 == second)
+				{
+					if (in_3 == third)
+					{
+						WriteLine("You've won: 1,000");
+					}
+					else
+					{
+						WriteLine("You've won: 100");
+					}
+				}
+				else
+				{
+					if (in_3 == second)
+					{
+						if (in_1 == third)
+						{
+							WriteLine("You've won: 1,000");
+						}
+						else
+						{
+							WriteLine("You've won: 100");
+						}
+					}
+					else
+					{
+						WriteLine("You've won: 10");
+					}
+				}
+			}
+			else
+			{
+				WriteLine ("You've won: 0");
+			}
 
             WriteLine("--End--");
 
